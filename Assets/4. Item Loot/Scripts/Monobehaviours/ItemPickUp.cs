@@ -47,11 +47,11 @@ public class ItemPickUp : MonoBehaviour
                 break;
             case ItemTypeDefinitions.WEAPON:
                 // TODO: Call change weapon
-                //charStats.ChangeWeapon();
+	            charStats.ChangeWeapon(this);
                 break;
             case ItemTypeDefinitions.ARMOR:
                 // TODO: Call change armor
-                //charStats.ChangeArmor();
+                charStats.ChangeArmor(this);
                 break;
         }
     }
